@@ -6,7 +6,6 @@ public class Asiento {
     Integer registro;
 
     void cambiarColor(String string){
-        boolean colorCambiado = true;
         if(string == "rojo"){
             this.color = string;
         }

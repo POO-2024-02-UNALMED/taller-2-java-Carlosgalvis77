@@ -28,14 +28,16 @@ public class Auto {
             return original;
         }
         for (int i = 0;  i< this.asientos.length; i++){
-            if (this.asientos[i].registro != this.registro){
-                original = "Las piezas no son originales";
-                break;
-            }
-            else{
-                original = "Auto original";
-            }
+            if (this.asientos[i] instanceof Asiento){
+                if (this.asientos[i].registro != this.registro){
+                    original = "Las piezas no son originales";
+                    break;
+                }
+                else{
+                    original = "Auto original";
+                }
+            } 
         }
-        return original; 
+        return original;
     }
-}
+    }
