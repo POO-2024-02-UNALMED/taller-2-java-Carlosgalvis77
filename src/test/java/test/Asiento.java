@@ -5,7 +5,7 @@ public class Asiento {
     Integer precio;
     Integer registro;
 
-    boolean cambiarColor(String string){
+    void cambiarColor(String string){
         boolean colorCambiado = true;
         if(string == "rojo"){
             this.color = string;
@@ -21,10 +21,6 @@ public class Asiento {
         }
         else if(string == "blanco"){
             this.color = string;
-        }
-        else{
-            colorCambiado = false;
-        }
-        return colorCambiado;
+        }       
     }
 }
